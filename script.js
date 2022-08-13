@@ -10,36 +10,45 @@ function getPlayerChoice(){
 
 function playRound(playerSelection, computerSelection){
     if (playerSelection == computerSelection){
-        return "draw";
+        return "It's a draw";
     }
 
     switch (playerSelection) {
         case "paper":
             if (computerSelection == "scissors"){
-                return "computerWin";
+                return "You lose :(";
             }
             else{
-                return "playerWin";
+                return "You win!";
             }
 
         case "scissors":
             if (computerSelection == "rock"){
-                return "computerWin";
+                return "You lose :(";
             }
             else{
-                return "playerWin";
+                return "You win!";
             }
 
         case "rock":
             if (computerSelection == "paper"){
-                return "computerWin";
+                return "You lose :(";
             }
             else{
-                return "playerWin";
+                return "You win!";
             }
     }
 }
 
+const results = document.querySelector('#results');
+const buttons = document.querySelectorAll('button');
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        results.textContent = playRound(button.getAttribute('id'), getComputerChoice());
+    });
+});
+
+/*
 function playGame(){
     for (let i=0; i<5; i++){
         console.log(playRound(getPlayerChoice(), getComputerChoice()));
@@ -47,3 +56,4 @@ function playGame(){
 }
 
 playGame();
+ */
