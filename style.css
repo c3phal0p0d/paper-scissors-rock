@@ -7,8 +7,8 @@
 }
 
 img {
-    height: 200px;
-    width: 200px;
+    height: 210px;
+    width: 210px;
 }
 
 h1 {
@@ -21,8 +21,10 @@ button {
 
 #results{
     font-family: 'Rubik', sans-serif;
-    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px;
     font-size: 17px;
+    height: 20px;
 }
 
 #display-stats{
@@ -34,7 +36,7 @@ button {
 }
 
 #display-stats div{
-    margin: 0px 60px;
+    margin: 0px 40px;
 }
 
 #display-stats h1{

@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Paper, Scissors, Rock</h1>
-    <div id="results">Make your move to start</div>
+    <div id="results">Make your move to start the game</div>
     <div id="display-choices">
         <button id="paper"><img src="paper.png"></button>
         <button id="scissors"><img src="scissors.png"></button>
@@ -16,13 +16,13 @@
     </div>
     <div id="display-stats">
         <div id ="player-stats">
-            <img src="paper.png">
-            <div id="player-score">You: </div>
+            <img id="player-move" src="paper.png">
+            <div id="player-score">You: <span id="player-score-text">0</span></div>
         </div>
         <h1>VS</h1>
         <div id="computer-stats">
-            <img src="rock.png">
-            <div id="computer-score">Computer: </div>
+            <img id="computer-move" src="rock.png">
+            <div id="computer-score">Computer: <span id="computer-score-text">0</span></div>
         </div>
     </div>
 
