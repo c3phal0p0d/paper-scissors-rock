@@ -4,7 +4,7 @@ function getComputerChoice(){
 }
 
 function getPlayerChoice(){
-    let choice = "Rock";
+    let choice = prompt("Choose your play");
     return choice.toLowerCase();
 }
 
